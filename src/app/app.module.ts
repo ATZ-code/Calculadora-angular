@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 
+import { AppComponent } from './app.component';
+import { ButtonComponent } from './components/button/button.component';
+import { DisplayComponent } from './components/display/display.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+// funciòn decoradora
 @NgModule({
+  // Declaracion de componentes de este modulo
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent,
+    DisplayComponent,
+    ButtonsComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
+    // importacion de modulos que queremos utilizar
   ],
   providers: [],
+  // es una propiedad que solo va en el modulo principal
+  // indica cual es el componente inicial
   bootstrap: [AppComponent]
 })
 export class AppModule { }
