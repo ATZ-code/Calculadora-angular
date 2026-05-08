@@ -40,3 +40,24 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Angular
+.angular
+.angular/cache
+
+# Logs
+*.log
+
+# Environment files
+src/environments/*.local.ts
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Cache
+.cache

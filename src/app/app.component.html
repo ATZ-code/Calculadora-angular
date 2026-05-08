@@ -1,5 +1,21 @@
-<div class="calculator">
-  <app-display [value]="display"></app-display>
+<div class="contenedor">
 
-  <app-buttons (buttonClick)="handleClick($event)"></app-buttons>
+  <h1>Cambiar Colores</h1>
+
+  <div 
+    class="cuadrado"
+    [style.background]="colorSeleccionado">
+  </div>
+
+  <p [style.color]="colorSeleccionado">
+    {{ colorSeleccionado }}
+  </p>
+
+  <div class="botones">
+    <button (click)="cambiarColor('red')">Rojo</button>
+    <button (click)="cambiarColor('blue')">Azul</button>
+    <button (click)="cambiarColor('green')">Verde</button>
+    <button (click)="cambiarColor('orange')">Naranja</button>
+  </div>
+
 </div>
